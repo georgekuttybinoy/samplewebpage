@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emma</title>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+            * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'M PLUS Rounded 1c', sans-serif;
+        }
+
+        .header {
+            display: flex;
+            width: 100%;
+            position: absolute;
+            justify-content: space-between;
+            align-items: center;
+            background: transparent;
+            color: white;
+            padding: 15px 20px;
+        }
+
+        .logo {
+            font-size: 3rem;
+            font-weight: 400;
+            line-height: 1.2;
+            background: linear-gradient(244.91deg, #D4FFEC 15.94%, #57F2CC 48.55%, #4596FB 84.06%);
+            background-clip: text;
+            -webkit-background-clip: text;
+           -webkit-text-fill-color: transparent;
+            display: inline-block;
+            background-size: 100% 100%;
+            margin-left: 7%;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            margin-right: 8%;
+        }
+
+        .nav-links li {
+            margin: 0 20px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.125rem;
+            font-weight: 400;
+            line-height: 1.333;
+            transition: color 0.3s ease-in-out;
+            
+        }
+
+        
+        .nav-links a:hover {
+            color: #585753; 
+        }
+
+        .menu-btn {
+            display: none;
+            font-size: 1.5rem;
+            background: none;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+
+
+
+        .hero-section {
+          position: relative;  
+    width: 100%;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    background: url('/images/photo copy.png') no-repeat center center/cover;
+    z-index: -1; 
+}
+
+
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 30%; }
+    50% { background-position: 70% 30%; }
+    100% { background-position: 0% 30%; }
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: center;
+    max-width: 60%;
+    word-wrap: break-word;
+position: absolute;
+top: 90px;
+
+    /* Gradient text */
+    background: linear-gradient(244.91deg, #D4FFEC, #57F2CC, #4596FB, #8A2BE2, #FF8C00);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    /* Animate the gradient */
+    background-size: 200% 200%; 
+    animation: gradientAnimation 4s infinite ease-in-out;
+}
+
+
+
+
+.cta-button {
+    top: 35%;
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 1.125rem;
+    line-height: 1.333;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+    background: transparent;
+    color: white;
+    position: absolute;
+    border: none;
+    
+   
+    border: 2px solid transparent;
+    background-image: linear-gradient(244.91deg, #D4FFEC, #57F2CC, #4596FB);
+    background-origin: border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, 
+                  linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+}
+
+
+.cta-button:hover {
+    background: linear-gradient(90deg, #D4FFEC, #57F2CC, #4596FB);
+    color: white;
+    -webkit-text-fill-color: white;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.flex-container {
+  display: flex;
+  gap: 20px;
+  padding: 100px;
+}
+
+.column {
+  flex: 1;
+  text-align: left;
+  padding: 30px;
+}
+
+.column img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 17px;
+ margin-top: 80px;
+}
+
+.column h1 {
+    font-size: 48px;
+    font-weight: 400;
+            line-height: 1.2;
+            background: linear-gradient(244.91deg, #D4FFEC 15.94%, #57F2CC 48.55%, #4596FB 84.06%);
+            background-clip: text;
+            -webkit-background-clip: text;
+           -webkit-text-fill-color: transparent;
+            display: inline-block;
+            background-size: 100% 100%;
+            margin-bottom: 65px;
+}
+
+.column h2 {
+    font-size: 18px;
+    font-weight: 400;
+            line-height: 24px;
+            color: #FFFFFF;
+            margin-bottom: 15px;
+}
+
+.column p {
+ 
+  color: #ABA7A7;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+
+.text-container {
+  max-width: 800px; 
+  margin: 0 auto; 
+  padding: 20px;
+  text-align: center; 
+  margin-bottom: 55px;
+}
+
+.text-container h1 {
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  background: linear-gradient(244.91deg, #D4FFEC 15.94%, #57F2CC 48.55%, #4596FB 84.06%);
+            background-clip: text;
+            -webkit-background-clip: text;
+           -webkit-text-fill-color: transparent;
+            display: inline-block;
+            background-size: 100% 100%;
+}
+
+.text-container p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #ABA7A7;
+}
+
+
+.container1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+  padding: 20px;
+  
+}
+
+.row1 {
+  display: flex;
+  gap: 20px; 
+  justify-content: center;
+}
+
+.box1 {
+  flex: 1;
+  max-width: 250px;
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 6px;
+  background: transparent;
+  border: 2px solid rgb(14, 13, 13);
+
+
+  transition: all 0.3s ease-in-out;
+}
+
+
+.box1:hover {
+   
+    background: rgba(255, 255, 255, 0.1);
+  border-color: #08fff3;
+  box-shadow: 0px 5px 15px rgba(95, 236, 255, 0.5); 
+  transform: translateY(-5px); 
+}
+
+.box1 h1 {
+font-size: 18px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+.box1 p {
+
+font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #ABA7A7;
+}
+
+/* .imgglobe {
+  width: 100%;
+  max-width: 896px;
+  height: auto;
+  
+  display: block;
+  margin: 0 auto;
+ 
+} */
+
+        @media (max-width: 768px) {
+
+
+            .logo {
+        font-size: 2rem;
+        margin-left: 5%;
+    }
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                background: black;
+                text-align: center;
+                padding: 10px 0;
+                z-index: 1;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links li {
+                padding: 10px 0;
+            }
+
+            .menu-btn {
+                display: block;
+            }
+
+
+          
+            .hero-section h1 {
+            font-size: 1.5rem;
+            max-width: 95%;
+            }
+
+
+            .cta-button {
+        font-size: 1rem;
+        padding: 5px 0;
+        top: 30;
+    }
+
+    .flex-container {
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  .column {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    
+  }
+
+   .column h1 {
+font-size: 28px;
+   }
+
+
+   .text-container{
+    padding: 40px;
+    margin-bottom: 10px;
+   }
+   .text-container h1 {
+    font-size: 36px;
+  }
+
+  .text-container p {
+    font-size: 16px;
+  }
+  .row1 {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .box1 {
+    flex: 1 1 100%; 
+  }
+        }
+    </style>  
+</head>
+<body style="background: black;">
+    
+    <header class="header">
+        <div class="logo">emma</div>
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Screenshot</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+
+
+    <div class="hero-section">
+        <h1>Accelerate your growth through hyper-qualified leads</h1>
+        <button class="cta-button">Request a Demo</button>
+    </div>
+
+
+
+    <div class="flex-container">
+        <div class="column">
+          <h1>Why Choose emma?</h1>
+          <h2>Custom CRM</h2>
+          <p>Streamline your lead capture from multiple sources such as Facebook, Google Ads, your website, and more, ensuring no lead goes unnoticed.</p>
+          <h2>Best for small scale business</h2>
+          <p>Streamline your lead capture from multiple sources such as Facebook, Google Ads, your website, and more, ensuring no lead goes unnoticed.</p>
+          <h2>Life time free</h2>
+          <p>Streamline your lead capture from multiple sources such as Facebook, Google Ads, your website, and more, ensuring no lead goes unnoticed.</p>
+
+        </div>
+        <div class="column">
+            <p>Streamline your lead capture from multiple sources such as Facebook, Google Ads, your website, and more, ensuring no lead goes unnoticed.</p>
+          <img src="/images/img comp.png" alt="Image 2">
+          
+        </div>
+      </div>
+      
+
+
+      <div class="text-container">
+        <h1>What Makes emma Different?</h1>
+        <p>Streamline your lead capture from multiple sources such as Facebook, Google Ads, your website, and more, ensuring no lead goes unnoticed. Efficient lead management and insightful analytics can boost your business growth by up to 50%.</p>
+      </div>
+
+
+      <div class="container1">
+        <div class="row1">
+          <div class="box1"><h1>Lead Automation</h1>
+            <p>Streamline your lead capture from multiple sources such as Facebook, Google Ads, your website, and more, ensuring no lead goes unnoticed. </p></div>
+          <div class="box1"><h1>Lead Management</h1>
+            <p>Streamline your lead capture from multiple sources such as Facebook, Google Ads, your website, and more, ensuring no lead goes unnoticed.</p></div>
+          <div class="box1"><h1>Franchise Management</h1>
+            <p>Streamline your lead capture from multiple sources such as Facebook, Google Ads, your website, and more, ensuring no lead goes unnoticed.</p></div>
+          <div class="box1"><h1>Lead History</h1>
+            <p>Streamline your lead capture from multiple sources such as Facebook, Google Ads, your website, and more, ensuring no lead goes unnoticed. </p></div>
+        </div>
+        <div class="row1">
+          <div class="box1"><h1>Lead Analytics</h1>
+            <p>Streamline your lead capture from multiple sources such as Facebook, Google Ads, your website, and more, ensuring no lead goes unnoticed. </p></div>
+          <div class="box1"><h1>Franchise Management</h1>
+            <p>Streamline your lead capture from multiple sources such as Facebook, Google Ads, your website, and more, ensuring no lead goes unnoticed.</p></div>
+        </div>
+      </div>
+      
+
+      <!-- <img class="imgglobe"  src="/images/globe.png" alt="globe" height="896" width="1012"> -->
+
+
+    <script>
+        function toggleMenu() {
+            document.querySelector(".nav-links").classList.toggle("active");
+        }
+    </script>
+
+</body>
+</html>
