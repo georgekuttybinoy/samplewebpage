@@ -427,7 +427,7 @@ font-size: 18px;
   font-size: 48px;
   font-weight: 400;
   line-height: 1.2;
-  margin-bottom: 20px;
+  margin-bottom: 0%;
   background: linear-gradient(244.91deg, #D4FFEC 15.94%, #57F2CC 48.55%, #4596FB 84.06%);
             background-clip: text;
             -webkit-background-clip: text;
@@ -461,7 +461,10 @@ font-size: 18px;
 
 .left-content p {
   font-size: 18px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+}
+.left-content ul{
+  margin-bottom: 5%;
 }
 
 .right-content {
@@ -472,15 +475,28 @@ font-size: 18px;
 }
 
 .transparent-box {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border-radius: 12px;
+  width: 100%;
+  max-width: 287px;
+  background: linear-gradient(0deg, #0D0D0D 0%, rgba(13, 13, 13, 0) 100%); 
+  border-radius: 21px;
   padding: 20px;
   text-align: center;
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: white;
+  
 }
+.transparent-box h2 {
 
+  margin-bottom: 5px;
+}
+.transparent-box hr {
+
+margin-bottom: 25px;
+}
+.transparent-box ul {
+
+margin-bottom: 15px;
+}
 .btn-pricing {
   background: transparent;
   color: white;
@@ -495,6 +511,98 @@ font-size: 18px;
   opacity: 0.8;
   transform: scale(1.05);
 }
+
+
+
+
+.flex-container2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #0D0D0D;
+            color: white;
+            padding: 50px;
+            gap: 50px;
+            width: 100%;
+            max-width: 100%;
+            margin: auto;
+            height: auto;
+            margin-bottom: 10%;
+            border: 1px solid #232323;
+        }
+
+        .flex-image-container img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .container-content {
+          width: 100%;
+            max-width: 500px;
+        }
+        .container-content h1 {
+          font-size: 40px;
+  font-weight: 400;
+  line-height: 1.2;
+            margin-bottom: 5%;
+            background: linear-gradient(244.91deg, #D4FFEC 15.94%, #57F2CC 48.55%, #4596FB 84.06%);
+            background-clip: text;
+            -webkit-background-clip: text;
+           -webkit-text-fill-color: transparent;
+            display: inline-block;
+            background-size: 100% 100%;
+        }
+
+        .container-content p {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1.2;
+            color: #ABA7A7;
+            margin-bottom: 5%;
+
+        }
+        .btn-flex {
+  background: transparent;
+  color: white;
+  border: 2px solid cyan;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.btn-flex:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+}
+
+
+.text-container3 {
+  width: 100%;
+  max-width: 65%; 
+  margin: 0 auto; 
+  padding: 20px;
+  text-align: center; 
+  margin-bottom: 55px;
+}
+
+.text-container3 h1 {
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 0%;
+  background: linear-gradient(244.91deg, #D4FFEC 15.94%, #57F2CC 48.55%, #4596FB 84.06%);
+            background-clip: text;
+            -webkit-background-clip: text;
+           -webkit-text-fill-color: transparent;
+            display: inline-block;
+            background-size: 100% 100%;
+}
+
+
+
 
         @media (max-width: 768px) {
 
@@ -610,17 +718,29 @@ font-size: 28px;
 
   .text-container2 h1 {
     font-size: 36px;
+    margin-bottom: 0%;
   }
 
   .pricing-container {
     flex-direction: column;
     text-align: center;
   }
+
   .right-content {
     width: 100%;
     flex-direction: column;
+   align-items: center;
   }
-
+  .flex-container2 {
+                flex-direction: column;
+                text-align: center;
+                width: 100%;
+            }
+            .text-container3 h1 {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.2;
+            }
         }
     </style>  
 </head>
@@ -717,7 +837,7 @@ font-size: 28px;
 <div class="pricing-container">
   <div class="left-content">
     <p>Streamline your lead capture from multiple sources such as Facebook, Google Ads, your website, and more, ensuring no lead goes unnoticed. </p>
-    <ul style="list-style: '-'; padding: 0; margin: 0;">
+    <ul style="list-style: '-'; padding: 0;">
       <li>Streamline your lead capture </li>
       <li>Streamline your lead capture </li>
       <li>Streamline your lead capture </li>
@@ -735,7 +855,7 @@ font-size: 28px;
     <div class="transparent-box">
       <h2>Trial</h2>
       <hr style="border: none; height: 2px; background: linear-gradient(244.91deg, #D4FFEC 47.83%, #57F2CC 80.44%, #4596FB 115.94%);">
-      <ul style="list-style: none; padding: 0; margin: 0;">
+      <ul style="list-style: none; padding: 0;">
         <li>Free usage</li>
         <li>All Permissions</li>
         <li>3 Users</li>
@@ -749,7 +869,7 @@ font-size: 28px;
     <div class="transparent-box">
       <h2>Custom  Plan</h2>
       <hr style="border: none; height: 2px; background: linear-gradient(244.91deg, #D4FFEC 47.83%, #57F2CC 80.44%, #4596FB 115.94%);">
-      <ul style="list-style: none; padding: 0; margin: 0;">
+      <ul style="list-style: none; padding: 0;">
         <li>Free usage</li>
         <li>All Permissions</li>
         <li>Unlimited Users</li>
@@ -760,6 +880,24 @@ font-size: 28px;
       <button class="btn-pricing">Contact for Price</button>
     </div>
   </div>
+</div>
+
+
+
+<div class="flex-container2">
+  <div class="flex-image-container">
+      <img src="/images/aaa.png" alt="Sample Image">
+  </div>
+  <div class="container-content">
+      <h1>Do not a miss a lead by any chance. access our CRM from any device </h1>
+      <p> Whether you're traveling without a laptop or simply on the go, there's no need to worry when using Emma. Our software is accessible on mobile phones, tablets, laptops, and desktop devices.</p>
+      <button class="btn-flex">Try Now</button>
+  </div>
+</div>
+
+
+<div class="text-container3">
+  <h1>Join us today and enjoy the satisfaction of our happy customers!</h1>
 </div>
 
     <script>
