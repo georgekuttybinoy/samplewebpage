@@ -601,7 +601,215 @@ margin-bottom: 15px;
             background-size: 100% 100%;
 }
 
+.gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 30px;
+            width: 100%;
+            max-width: 80%;
+            height: auto;
+          align-items: center;
+          margin: auto;
+          
+        }
 
+        .gallery-item {
+            flex: 1 1 auto;
+            max-width: calc(100% / 6 - 10px); 
+            overflow: hidden;
+            border-radius: 20px;
+        }
+
+        .gallery-item1 img {
+            width: 100%;
+            max-width: 89px;
+            height: auto;
+            display: block;
+            object-fit: cover;
+            border-radius: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .gallery-item1 img:hover { 
+          transform: scale(1.1);
+    box-shadow: 0 10px 10px rgba(7, 232, 240, 0.5); 
+}
+        .gallery-item2 img {
+            width: 100%;
+            max-width: 153px;
+            height: auto;
+            display: block;
+            object-fit: cover;
+            border-radius: 20px;
+            transition: transform 0.3s ease-in-out;
+        
+        }
+        .gallery-item2 img:hover { 
+          transform: scale(1.1);
+    box-shadow: 0 10px 10px rgba(7, 232, 240, 0.5); 
+}
+        .gallery-item3 img {
+            width: 100%;
+            max-width: 309px;
+            height: auto;
+            display: block;
+            object-fit: cover;
+            border-radius: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .gallery-item3 img:hover { 
+          transform: scale(1.1);
+    box-shadow: 0 10px 10px rgba(7, 232, 240, 0.5); 
+}
+        .gallery-item4 img {
+            width: 100%;
+            max-width: 149px;
+            height: auto;
+            display: block;
+            object-fit: cover;
+            border-radius: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .gallery-item4 img:hover { 
+          transform: scale(1.1);
+    box-shadow: 0 10px 10px rgba(7, 232, 240, 0.5); 
+}
+        .gallery-item5 img {
+            width: 100%;
+            max-width: 149px;
+            height: auto;
+            display: block;
+            object-fit: cover;
+            border-radius: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .gallery-item5 img:hover { 
+          transform: scale(1.1);
+    box-shadow: 0 10px 10px rgba(7, 232, 240, 0.5); 
+}
+        .gallery-item6 img {
+            width: 100%;
+            max-width: 189px;
+            height: auto;
+            display: block;
+            object-fit: cover;
+            border-radius: 20px;
+            transition: transform 0.3s ease-in-out;
+           
+        }
+        .gallery-item6 img:hover { 
+          transform: scale(1.1);
+    box-shadow: 0 10px 10px rgba(7, 232, 240, 0.5); 
+}
+
+
+.transparent-container2 {
+  width: 100%;
+  max-width: 1113px;
+    display: flex;
+    
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    color: #FFFFFF;
+    background: linear-gradient(0deg, #0D0D0D 0%, rgba(13, 13, 13, 0) 100%); 
+    
+    border-radius: 21px;
+    border: 1px solid rgb(27, 26, 26);
+    padding: 90px;
+    text-align: center;
+    margin: 5% auto;
+}
+
+.transparent-container2 p {
+    display: block;
+max-width: 920px;
+font-size: 30px;
+line-height: 1.7;
+font-weight: 400;
+color: #ADAAD0;
+    margin-bottom: 10px;
+}
+.transparent-container2 h4 {
+  max-width: 458px;
+font-size: 18px;
+line-height: 1.4;
+font-weight: 400;
+}
+
+.highlight {
+  font-size: 28px;
+line-height: 1.7;
+font-weight: 600;
+color: #fff;
+}
+
+.chevron-buttons {
+   margin-inline-start: 80%;
+ max-width: 31px;
+    gap: 40px;
+  display: flex;
+  flex-direction: row;
+ 
+}
+
+
+.chevron {
+    background: transparent;
+   max-width: 10%;
+    height: auto;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: transform 0.2s ease-in-out;
+    
+}
+
+.chevron:hover {
+    transform: scale(1.1);
+   
+}
+
+.chevron:active {
+    transform: scale(0.95);
+}
+
+.text-container4 {
+ width: 100%;
+ max-width: 800px;
+  margin: auto; 
+  padding: 20px;
+  text-align: center; 
+  margin-bottom: 55px;
+  
+}
+
+.text-container4 h1 {
+  max-width: 364px;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  background: linear-gradient(244.91deg, #D4FFEC 15.94%, #57F2CC 48.55%, #4596FB 84.06%);
+            background-clip: text;
+            -webkit-background-clip: text;
+           -webkit-text-fill-color: transparent;
+            display: inline-block;
+            background-size: 100% 100%;
+}
+
+.text-container4 p {
+  max-width: 738px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #ABA7A7;
+
+}
 
 
         @media (max-width: 768px) {
@@ -741,6 +949,23 @@ font-size: 28px;
   font-weight: 400;
   line-height: 1.2;
             }
+
+            
+              .gallery-item {
+                max-width: calc(100% / 2 - 10px); 
+            }
+
+            .transparent-container2 {
+              max-width: 90%;
+              margin: auto;
+            }
+            .transparent-container2 p {
+              font-size: 18px;
+            }
+            .transparent-container2 h4 {
+              font-size: 18px;
+            }
+     
         }
     </style>  
 </head>
@@ -899,6 +1124,34 @@ font-size: 28px;
 <div class="text-container3">
   <h1>Join us today and enjoy the satisfaction of our happy customers!</h1>
 </div>
+
+<div class="gallery-container">
+  <div class="gallery-item1"><img src="/images/person6.jpeg" alt="Image 1"></div>
+  <div class="gallery-item2"><img src="/images/person2.jpeg" alt="Image 2"></div>
+  <div class="gallery-item3"><img src="/images/person1.jpeg" alt="Image 3"></div>
+  <div class="gallery-item4"><img src="/images/person4.jpeg" alt="Image 4"></div>
+  <div class="gallery-item5"><img src="/images/person5.jpeg" alt="Image 5"></div>
+  <div class="gallery-item6"><img src="/images/person3.jpeg" alt="Image 6"></div>
+</div>
+
+<div class="transparent-container2">
+  <p>The reason why I only work with DNS? Simple: <span class="highlight"> guys are exceptionally good, flexible and always “ on top of their game ”. </span>
+    They consistently deliver high quality, are creative in their approach 
+    and work customer-oriented.</p>
+    <h4>Mandy van der Put,<hr style="border: none;">
+      Project Manager at Straight-Line Leadership Int. </h4>
+      <div class="chevron-buttons">
+        <button class="chevron chevron-left">&#60;</button>
+        <button class="chevron chevron-right">&#62;</button>
+    </div>
+</div>
+
+
+<div class="text-container4">
+  <h1>Connect with us</h1>
+  <p>Reach out to us during our business hours, 9 AM to 6 PM, or connect with our dedicated support team via email or WhatsApp. We're always here to assist you!</p>
+</div>
+
 
     <script>
         function toggleMenu() {
