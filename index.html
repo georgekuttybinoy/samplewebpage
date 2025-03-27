@@ -110,13 +110,11 @@
 position: absolute;
 top: 90px;
 
-    /* Gradient text */
     background: linear-gradient(244.91deg, #D4FFEC, #57F2CC, #4596FB, #8A2BE2, #FF8C00);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     
-    /* Animate the gradient */
     background-size: 200% 200%; 
     animation: gradientAnimation 4s infinite ease-in-out;
 }
@@ -296,7 +294,7 @@ font-size: 18px;
 }
 
 
-/* .image-container {
+.image-container {
   width: 100%;
   max-width: 100vw; 
   height: auto;
@@ -317,7 +315,7 @@ font-size: 18px;
   left: 50%;
   transform: translateX(-10%); 
   opacity: 0.2; 
-} */
+} 
 
 
 
@@ -399,10 +397,11 @@ font-size: 18px;
     transform: scale(1.05);
 }
 
-/* .image-container2 {
+ .image-container2 {
   width: 100%;
   max-width: 386px; 
-  margin: 0 auto;
+  
+  top: calc(100vh + 250vh);
   position: absolute;
   display: flex;
   justify-content: center;
@@ -414,7 +413,7 @@ font-size: 18px;
   height: auto;
   max-width: 386px; 
   object-fit: contain;
-} */
+} 
 
 .text-container2 {
   max-width: 800px; 
@@ -531,12 +530,17 @@ margin-bottom: 15px;
             margin-bottom: 10%;
             border: 1px solid #232323;
         }
-
+        @keyframes moveY {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(50px); } 
+    100% { transform: translateY(0); } 
+}
         .flex-image-container img {
             width: 100%;
             max-width: 400px;
             height: auto;
             border-radius: 10px;
+            animation: moveY 2s infinite ease-in-out;
         }
 
         .container-content {
@@ -817,7 +821,8 @@ color: #fff;
   display: flex;
   flex-direction: row;
   margin: auto;
-
+width: 100%;
+max-width: 1100px;
   margin-bottom: 10%;
  
 }
@@ -987,9 +992,35 @@ color: #fff;
     margin-top: 20px;
 }
 
+.footer {
+    background-color: #0F0F0F;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    
+}
 
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+}
 
+.footer-bottom {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
 
+/* .eclipse {
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle at center, rgba(67, 92, 202, 0.9) 40%, rgba(80, 132, 190, 0.6) 60%, transparent 80%);
+    border-radius: 50%;
+    opacity: 0.5;
+    
+} */
 
 
         @media (max-width: 768px) {
@@ -1076,9 +1107,9 @@ font-size: 28px;
     flex: 1 1 100%; 
   }
 
-  /* .imgglobe {
+   .imgglobe {
     max-width: 90vw;
-  } */
+  } 
 
 
   .transparent-container {
@@ -1169,6 +1200,13 @@ font-size: 28px;
               max-width: 80%;
 margin: auto;
             }
+
+            .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 1100px;
+        margin: auto;
+    }
         }
     </style>  
 </head>
@@ -1239,10 +1277,10 @@ margin: auto;
         </div>
       </div>
       
-<!-- <div class="image-container">
+ <!-- <div class="image-container">
       <img src="/images/globe.png" alt="Globe Image" class="imgglobe">
-    </div> -->
-    
+    </div> 
+     -->
     <div class="transparent-container">
       <div class="content-transparent-container">
           <h1>Get Started Now!</h1>
@@ -1251,9 +1289,9 @@ margin: auto;
               <button class="btn-transparent-container primary">Learn More</button>
               <button class="btn-transparent-container secondary">Contact Us</button>
           </div>
-          <!-- <div class="image-container2">
+          <div class="image-container2">
             <img src="/images/phone.png" alt="Decorative Image">
-          </div> -->
+          </div> 
       </div>
   </div>
 
@@ -1429,7 +1467,19 @@ margin: auto;
 </div>
 </form>
 
+
 </div>
+
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-bottom">
+      <p>© 2025 Developed and managed by Parent company Deepnetsoft solutions Pvt Ltd . All rights reserved.</p>
+  </div>
+  </div>
+</footer>
+
+
     <script>
         function toggleMenu() {
             document.querySelector(".nav-links").classList.toggle("active");
