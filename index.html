@@ -118,6 +118,22 @@ font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
 
+.main-heading-container {
+ width: 100%;
+ max-width: 100%;
+ display: flex;
+ flex-direction: column;
+ margin: auto; 
+
+ text-align: center; 
+ align-items: center;
+ justify-content: center;
+ position: relative;
+ top: -20%;
+ 
+}
+
+
 
 
 .main-container {
@@ -181,6 +197,11 @@ overflow: hidden;
  top: -30%;
  left: 25%;
 }
+
+
+
+
+
 
 
         .header {
@@ -265,8 +286,6 @@ overflow: hidden;
     text-align: center;
     max-width: 60%;
     word-wrap: break-word;
-position: absolute;
-top: 90px;
 
     background: linear-gradient(244.91deg, #D4FFEC, #57F2CC, #4596FB, #8A2BE2, #FF8C00);
     background-clip: text;
@@ -277,38 +296,6 @@ top: 90px;
     animation: gradientAnimation 4s infinite ease-in-out;
 }
 
-
-
-
-.button1 {
-    top: 35%;
-    display: inline-block;
-    padding: 5px 10px;
-    font-size: 1.125rem;
-    line-height: 1.333;
-    font-weight: 500;
-    text-align: center;
-    cursor: pointer;
-    border-radius: 6px;
-    transition: all 0.3s ease-in-out;
-    background: transparent;
-    color: white;
-    position: absolute;
-   
-    
-   
-    border: 2px solid cyan;
- 
-}
-
-
-.button1:hover {
-    
-    color: rgb(19, 14, 14);
-    opacity: 0.5;
-    transform: scale(1.05);
-   
-}
 
 
 
@@ -666,28 +653,7 @@ top: 30%;
     margin: 5% auto;
 }
 
-/* .transparent-container2 p {
-    display: block;
-max-width: 920px;
-font-size: 30px;
-line-height: 1.7;
-font-weight: 400;
-color: #ADAAD0;
-    margin-bottom: 10px;
-}
-.transparent-container2 h4 {
-  max-width: 458px;
-font-size: 18px;
-line-height: 1.4;
-font-weight: 400;
-}
 
-.highlight {
-  font-size: 28px;
-line-height: 1.7;
-font-weight: 600;
-color: #fff;
-} */
 
 .chevron-buttons {
    margin-inline-start: 80%;
@@ -973,7 +939,9 @@ z-index: -1;
                 display: block;
             }
 
-
+.main-heading-container {
+  top: -20%;
+}
           
             .hero-section h1 {
             font-size: 1.5rem;
@@ -981,11 +949,6 @@ z-index: -1;
             }
 
 
-            .button1 {
-        font-size: 1rem;
-        padding: 5px 0;
-        top: 30;
-    }
 
     .flex-container {
     flex-direction: column;
@@ -1077,8 +1040,8 @@ z-index: -1;
               padding: 20px;
             }
           
-            .transparent-container2 .highlight {
-font-size: 18px;
+            .transparent-container2 {
+margin-bottom: 5%;
             }
            
 
@@ -1103,6 +1066,7 @@ font-size: 18px;
               max-width: 80%;
 margin: auto;
             }
+
 .gradient-container-middle {
   top: 50%;
  max-width: 100%;
@@ -1142,8 +1106,10 @@ margin: auto;
 
 
     <div class="hero-section mb-lg">
-        <h1>Accelerate your growth through hyper-qualified leads</h1>
-        <button class="button1">Request a Demo</button>
+      <div class="main-heading-container">
+        <h1 class="mb-md">Accelerate your growth through hyper-qualified leads</h1>
+        <button class="button">Request a Demo</button>
+      </div>
         <div class="gradient-container-top">
           <div class="circle-gradient-top"></div>
           </div>
