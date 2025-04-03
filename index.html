@@ -12,11 +12,87 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-        }
+          }
         
-        body {
-            font-family: 'M PLUS Rounded 1c', sans-serif;
-        }
+body {
+font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+
+
+
+.font-lg {
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: clamp(1.1, 1.5vw, 1.3);
+}
+
+.font-color-lg {
+  background: linear-gradient(244.91deg, #D4FFEC 15.94%, #57F2CC 48.55%, #4596FB 84.06%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  background-size: 100% 100%;
+}
+
+.font-md {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+.font-color-md {
+  color: #FFFFFF;
+}
+
+.font-sm {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.1rem;
+}
+
+.font-color-sm {
+  color: #ABA7A7;
+}
+
+.mb-lg {
+  margin-bottom: 4rem;
+}
+
+.mb-md {
+  margin-bottom: 2rem;
+}
+
+.mb-sm {
+  margin-bottom: 1rem;
+}
+
+.button {
+  background: transparent;
+  color: #FFFFFF;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  border: 2px solid cyan;
+  padding: 5px 20px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.button:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
 
         .header {
             display: flex;
@@ -30,15 +106,6 @@
         }
 
         .logo {
-            font-size: 3rem;
-            font-weight: 400;
-            line-height: 1.2;
-            background: linear-gradient(244.91deg, #D4FFEC 15.94%, #57F2CC 48.55%, #4596FB 84.06%);
-            background-clip: text;
-            -webkit-background-clip: text;
-           -webkit-text-fill-color: transparent;
-            display: inline-block;
-            background-size: 100% 100%;
             margin-left: 7%;
         }
 
@@ -81,6 +148,7 @@
         .hero-section {
           position: relative;  
     width: 100%;
+    
     height: 100vh; 
     display: flex;
     flex-direction: column;
@@ -160,13 +228,11 @@ top: 90px;
   gap: 20px;
   padding: 100px;
 }
-
 .column {
   flex: 1;
   text-align: left;
   padding: 30px;
 }
-
 .column img {
   width: 100%;
   max-width: 800px;
@@ -175,35 +241,8 @@ top: 90px;
  margin-top: 80px;
 }
 
-.column h1 {
-    font-size: 48px;
-    font-weight: 400;
-            line-height: 1.2;
-            background: linear-gradient(244.91deg, #D4FFEC 15.94%, #57F2CC 48.55%, #4596FB 84.06%);
-            background-clip: text;
-            -webkit-background-clip: text;
-           -webkit-text-fill-color: transparent;
-            display: inline-block;
-            background-size: 100% 100%;
-            margin-bottom: 65px;
-}
 
-.column h2 {
-    font-size: 18px;
-    font-weight: 400;
-            line-height: 24px;
-            color: #FFFFFF;
-            margin-bottom: 15px;
-}
 
-.column p {
- 
-  color: #ABA7A7;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.2;
-  margin-bottom: 15px;
-}
 
 
 .text-container {
@@ -214,25 +253,8 @@ top: 90px;
   margin-bottom: 55px;
 }
 
-.text-container h1 {
-  font-size: 48px;
-  font-weight: 400;
-  line-height: 1.2;
-  margin-bottom: 20px;
-  background: linear-gradient(244.91deg, #D4FFEC 15.94%, #57F2CC 48.55%, #4596FB 84.06%);
-            background-clip: text;
-            -webkit-background-clip: text;
-           -webkit-text-fill-color: transparent;
-            display: inline-block;
-            background-size: 100% 100%;
-}
 
-.text-container p {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.2;
-  color: #ABA7A7;
-}
+
 
 
 .container1 {
@@ -249,7 +271,7 @@ top: 90px;
   justify-content: center;
 }
 
-.box1 {
+.box {
   flex: 1;
   max-width: 250px;
   padding: 20px;
@@ -259,34 +281,18 @@ top: 90px;
   border-radius: 6px;
   background: transparent;
   border: 2px solid rgb(14, 13, 13);
-
-
   transition: all 0.3s ease-in-out;
 }
 
-
-.box1:hover {
-   
+.box:hover {
     background: rgba(0, 0, 0);
   border-color: #08fff3;
   box-shadow: 0px 5px 15px rgba(95, 236, 255, 0.5); 
   transform: translateY(-5px); 
 }
 
-.box1 h1 {
-font-size: 18px;
-  font-weight: 800;
-  line-height: 1.2;
-  color: #FFFFFF;
-  margin-bottom: 30px;
-}
-.box1 p {
 
-font-size: 18px;
-  font-weight: 400;
-  line-height: 1.2;
-  color: #ABA7A7;
-}
+
 
 
 .image-container {
@@ -300,8 +306,6 @@ font-size: 18px;
   transform: translateX(-50%); 
   z-index: -1;
 }
-
-
 .imgglobe {
   width: 100%;
   max-width: 1450px;
@@ -339,58 +343,13 @@ font-size: 18px;
     
 }
 
-.transparent-container h1 {
-  font-size: 48px;
-  font-weight: 400;
-  line-height: 1.2;
-  margin-bottom: 30px;
-  background: linear-gradient(244.91deg, #D4FFEC 15.94%, #57F2CC 48.55%, #4596FB 84.06%);
-            background-clip: text;
-            -webkit-background-clip: text;
-           -webkit-text-fill-color: transparent;
-            display: inline-block;
-            background-size: 100% 100%;
-}
-
-.transparent-container p {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.2;
-  margin-bottom: 30px;
-  color: #ABA7A7;
-}
-
 .button-group-transparent-container {
-    margin-top: 20px;
     display: flex;
     justify-content: center;
     gap: 30px;
 }
 
-.btn-transparent-container {
-    padding: 10px 30px;
-    border: 2px solid cyan;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 18px;
-    transition: 0.3s ease-in-out;
-}
 
-.primary {
-    background-color: transparent;
-    color: #FFFFFF;
-}
-
-.secondary {
-    background-color: transparent;
-    color: #FFFFFF;
-;
-}
-
-.btn-transparent-container:hover {
-    opacity: 0.8;
-    transform: scale(1.05);
-}
 
  .image-container2 {
   width: 100%;
@@ -410,6 +369,8 @@ font-size: 18px;
   object-fit: contain;
 } 
 
+
+
 .text-container2 {
   max-width: 800px; 
   margin: 0 auto; 
@@ -418,18 +379,7 @@ font-size: 18px;
   margin-bottom: 55px;
 }
 
-.text-container2 h1 {
-  font-size: 48px;
-  font-weight: 400;
-  line-height: 1.2;
-  margin-bottom: 0%;
-  background: linear-gradient(244.91deg, #D4FFEC 15.94%, #57F2CC 48.55%, #4596FB 84.06%);
-            background-clip: text;
-            -webkit-background-clip: text;
-           -webkit-text-fill-color: transparent;
-            display: inline-block;
-            background-size: 100% 100%;
-}
+
 
 
 
@@ -449,24 +399,9 @@ font-size: 18px;
   color: white;
 }
 
-.left-content h1 {
-  font-size: 36px;
-  margin-bottom: 15px;
-  
-}
-.left-content h2 {
-  font-size: 40px;
-}
-
-.left-content p {
-  font-size: 18px;
-  margin-bottom: 20px;
-  color: #ABA7A7;
-}
-.left-content ul{
-  margin-bottom: 5%;
-  color: #ABA7A7;
-}
+.left-content li {
+  margin-bottom: 1%;
+} 
 
 .right-content {
   display: flex;
@@ -486,32 +421,12 @@ font-size: 18px;
   color: white;
   
 }
-.transparent-box h2 {
+ 
+.transparent-box li {
+  margin-bottom: 3%;
+} 
 
-  margin-bottom: 5px;
-}
-.transparent-box hr {
 
-margin-bottom: 25px;
-}
-.transparent-box ul {
-  color: #ABA7A7;
-margin-bottom: 15px;
-}
-.btn-pricing {
-  background: transparent;
-  color: white;
-  border: 2px solid cyan;
-  padding: 10px 20px;
-  cursor: pointer;
-  border-radius: 6px;
-  transition: 0.3s;
-}
-
-.btn-pricing:hover {
-  opacity: 0.8;
-  transform: scale(1.05);
-}
 
 
 
@@ -546,43 +461,10 @@ margin-bottom: 15px;
 
         .container-content {
           width: 100%;
-            max-width: 500px;
+            max-width: 600px;
         }
-        .container-content h1 {
-          font-size: 40px;
-  font-weight: 400;
-  line-height: 1.2;
-            margin-bottom: 5%;
-            background: linear-gradient(244.91deg, #D4FFEC 15.94%, #57F2CC 48.55%, #4596FB 84.06%);
-            background-clip: text;
-            -webkit-background-clip: text;
-           -webkit-text-fill-color: transparent;
-            display: inline-block;
-            background-size: 100% 100%;
-        }
-
-        .container-content p {
-            font-size: 18px;
-            font-weight: 400;
-            line-height: 1.2;
-            color: #ABA7A7;
-            margin-bottom: 5%;
-
-        }
-        .btn-flex {
-  background: transparent;
-  color: white;
-  border: 2px solid cyan;
-  padding: 10px 20px;
-  cursor: pointer;
-  border-radius: 6px;
-  transition: 0.3s;
-}
-
-.btn-flex:hover {
-  opacity: 0.8;
-  transform: scale(1.05);
-}
+      
+   
 
 
 .text-container3 {
@@ -594,18 +476,6 @@ margin-bottom: 15px;
   margin-bottom: 55px;
 }
 
-.text-container3 h1 {
-  font-size: 48px;
-  font-weight: 400;
-  line-height: 1.2;
-  margin-bottom: 0%;
-  background: linear-gradient(244.91deg, #D4FFEC 15.94%, #57F2CC 48.55%, #4596FB 84.06%);
-            background-clip: text;
-            -webkit-background-clip: text;
-           -webkit-text-fill-color: transparent;
-            display: inline-block;
-            background-size: 100% 100%;
-}
 
 .gallery-container {
             display: flex;
@@ -794,28 +664,7 @@ color: #fff;
   
 }
 
-.text-container4 h1 {
-  max-width: 364px;
-  font-size: 48px;
-  font-weight: 400;
-  line-height: 1.2;
-  margin-bottom: 20px;
-  background: linear-gradient(244.91deg, #D4FFEC 15.94%, #57F2CC 48.55%, #4596FB 84.06%);
-            background-clip: text;
-            -webkit-background-clip: text;
-           -webkit-text-fill-color: transparent;
-            display: inline-block;
-            background-size: 100% 100%;
-}
 
-.text-container4 p {
-  max-width: 738px;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.2;
-  color: #ABA7A7;
-
-}
 
 
 .lastcontainer {
@@ -883,22 +732,7 @@ max-width: 1100px;
         }
 
 
-        .submit-btn {
-            width: 100%;
-            max-width: 30%;
-            padding: 10px;
-            background: transparent;
-            color: white;
-            border: 1px solid cyan;
-            border-radius: 5px;
-            cursor: pointer;
-           
-            margin-top: 10px;
-        }
-        .submit-btn:hover {
-            background: #37404246;
-
-        }
+        
 
 
         .responsive-containerlast {
@@ -906,7 +740,7 @@ max-width: 1100px;
     flex-direction: column;
     align-items: left;
     text-align: center;
-    padding: 30px;
+    padding: 20px;
     max-width: 383px;
     height: auto;
     margin: auto;
@@ -918,12 +752,7 @@ max-width: 1100px;
 
 
 .intro-text {
-    font-size: 18px;
-    line-height: 1.5;
-    font-weight: 400;
     max-width: 266px;
-    margin-bottom: 20px;
-    color: #ABA7A7;
     text-align: left;
 }
 
@@ -945,7 +774,7 @@ max-width: 1100px;
     color: #4af1f7; 
 }
 .fa-instagram {
-    font-size: 30px; 
+    font-size: 24px; 
     color: #E4405F; 
 }
 
@@ -971,18 +800,10 @@ max-width: 1100px;
 .detailslogo {
   display: flex;
   flex-direction: column;
+word-break: break-all;
 }
 
-.logo-names h3 {
-    font-size: 18px;
-    margin: 5px 0;
-    font-weight: 400;
-}
 
-.logo-names p {
-    font-size: 16px;
-    color: #ABA7A7;
-}
 
 
 .logos-row {
@@ -1060,9 +881,34 @@ z-index: -1;
         @media (max-width: 768px) {
 
 
+
+.font-lg {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: clamp(1.1, 1.5vw, 1.3);
+}
+
+.font-md {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.125rem;
+}
+
+.font-sm {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1rem;
+}
+
+.button{
+  font-size: 0.875rem;
+}
+
+
+
             .logo {
-        font-size: 2rem;
         margin-left: 5%;
+        max-width: 90%;
     }
 
             .nav-links {
@@ -1117,22 +963,16 @@ z-index: -1;
     
   }
 
-   .column h1 {
-font-size: 28px;
-   }
+   
 
 
    .text-container{
     padding: 40px;
     margin-bottom: 10px;
    }
-   .text-container h1 {
-    font-size: 36px;
-  }
+  
 
-  .text-container p {
-    font-size: 16px;
-  }
+ 
   .row1 {
     flex-wrap: wrap;
     justify-content: center;
@@ -1153,12 +993,7 @@ font-size: 28px;
     width: 90%;
     margin: 50px auto;
   }
-  .transparent-container h1 {
-    font-size: 36px;
-  }
-  .transparent-container p {
-    font-size: 16px;
-  }
+
   .button-group-transparent-container {
     flex-direction: column; 
     gap: 10px;
@@ -1172,10 +1007,7 @@ font-size: 28px;
     position: relative;
   } 
 
-  .text-container2 h1 {
-    font-size: 36px;
-    margin-bottom: 0%;
-  }
+  
 
   .pricing-container {
     flex-direction: column;
@@ -1208,22 +1040,12 @@ font-size: 28px;
               margin: auto;
               padding: 20px;
             }
-            .transparent-container2 p {
-              font-size: 16px;
-            }
+          
             .transparent-container2 .highlight {
 font-size: 18px;
             }
-            .transparent-container2 h4 {
-              font-size: 16px;
-            }
+           
 
-.text-container4 h1 {
-  font-size: 36px;
-}
-.text-container4 p{
-  font-size: 16px;
-}
 
             .contact-form{
               max-width: 80%;
@@ -1232,10 +1054,7 @@ font-size: 18px;
             .form-group {
                 flex-direction: column;
             }
-            .submit-btn{
-              max-width: 50%;
-            
-            }
+          
 
             .lastcontainer {
               display: flex;
@@ -1274,7 +1093,7 @@ margin: auto;
 <body style="background: black;">
     
     <header class="header">
-        <div class="logo">emma</div>
+        <div class="logo"><h1 class="font-lg font-color-lg">emma</h1></div>
         <button class="menu-btn" onclick="toggleMenu()">☰</button>
         <ul class="nav-links">
             <li><a href="#">Home</a></li>
@@ -1295,17 +1114,17 @@ margin: auto;
 
     <div class="flex-container">
         <div class="column">
-          <h1>Why Choose emma?</h1>
-          <h2>Custom CRM</h2>
-          <p>Streamline your lead capture from multiple sources such as Facebook, Google Ads, your website, and more, ensuring no lead goes unnoticed.</p>
-          <h2>Best for small scale business</h2>
-          <p>Streamline your lead capture from multiple sources such as Facebook, Google Ads, your website, and more, ensuring no lead goes unnoticed.</p>
-          <h2>Life time free</h2>
-          <p>Streamline your lead capture from multiple sources such as Facebook, Google Ads, your website, and more, ensuring no lead goes unnoticed.</p>
+          <h1 class="font-lg font-color-lg mb-lg">Why Choose emma?</h1>
+          <h2 class="font-md font-color-md mb-sm">Custom CRM</h2>
+          <p class="font-sm font-color-sm mb-sm">Streamline your lead capture from multiple sources such as Facebook, Google Ads, your website, and more, ensuring no lead goes unnoticed.</p>
+          <h2 class="font-md font-color-md mb-sm">Best for small scale business</h2>
+          <p class="font-sm font-color-sm mb-sm">Streamline your lead capture from multiple sources such as Facebook, Google Ads, your website, and more, ensuring no lead goes unnoticed.</p>
+          <h2 class="font-md font-color-md mb-sm">Life time free</h2>
+          <p class="font-sm font-color-sm mb-sm">Streamline your lead capture from multiple sources such as Facebook, Google Ads, your website, and more, ensuring no lead goes unnoticed.</p>
 
         </div>
         <div class="column">
-            <p>Streamline your lead capture from multiple sources such as Facebook, Google Ads, your website, and more, ensuring no lead goes unnoticed.</p>
+            <p class="font-sm font-color-sm mb-sm">Streamline your lead capture from multiple sources such as Facebook, Google Ads, your website, and more, ensuring no lead goes unnoticed.</p>
           <img src="/images/img comp.png" alt="Image 2">
           
         </div>
@@ -1314,27 +1133,27 @@ margin: auto;
 
 
       <div class="text-container">
-        <h1>What Makes emma Different?</h1>
-        <p>Streamline your lead capture from multiple sources such as Facebook, Google Ads, your website, and more, ensuring no lead goes unnoticed. Efficient lead management and insightful analytics can boost your business growth by up to 50%.</p>
+        <h1 class="font-lg font-color-lg mb-md">What Makes emma Different?</h1>
+        <p class="font-sm font-color-sm">Streamline your lead capture from multiple sources such as Facebook, Google Ads, your website, and more, ensuring no lead goes unnoticed. Efficient lead management and insightful analytics can boost your business growth by up to 50%.</p>
       </div>
 
 
       <div class="container1">
         <div class="row1">
-          <div class="box1"><h1>Lead Automation</h1>
-            <p>Streamline your lead capture from multiple sources such as Facebook, Google Ads, your website, and more, ensuring no lead goes unnoticed. </p></div>
-          <div class="box1"><h1>Lead Management</h1>
-            <p>Streamline your lead capture from multiple sources such as Facebook, Google Ads, your website, and more, ensuring no lead goes unnoticed.</p></div>
-          <div class="box1"><h1>Franchise Management</h1>
-            <p>Streamline your lead capture from multiple sources such as Facebook, Google Ads, your website, and more, ensuring no lead goes unnoticed.</p></div>
-          <div class="box1"><h1>Lead History</h1>
-            <p>Streamline your lead capture from multiple sources such as Facebook, Google Ads, your website, and more, ensuring no lead goes unnoticed. </p></div>
+          <div class="box"><h1 class="font-md font-color-md mb-sm">Lead Automation</h1>
+            <p class="font-sm font-color-sm">Streamline your lead capture from multiple sources such as Facebook, Google Ads, your website, and more, ensuring no lead goes unnoticed. </p></div>
+          <div class="box"><h1 class="font-md font-color-md mb-sm">Lead Management</h1>
+            <p class="font-sm font-color-sm">Streamline your lead capture from multiple sources such as Facebook, Google Ads, your website, and more, ensuring no lead goes unnoticed.</p></div>
+          <div class="box"><h1 class="font-md font-color-md mb-sm">Franchise Management</h1>
+            <p class="font-sm font-color-sm">Streamline your lead capture from multiple sources such as Facebook, Google Ads, your website, and more, ensuring no lead goes unnoticed.</p></div>
+          <div class="box"><h1 class="font-md font-color-md mb-sm">Lead History</h1>
+            <p class="font-sm font-color-sm">Streamline your lead capture from multiple sources such as Facebook, Google Ads, your website, and more, ensuring no lead goes unnoticed. </p></div>
         </div>
         <div class="row1">
-          <div class="box1"><h1>Lead Analytics</h1>
-            <p>Streamline your lead capture from multiple sources such as Facebook, Google Ads, your website, and more, ensuring no lead goes unnoticed. </p></div>
-          <div class="box1"><h1>Franchise Management</h1>
-            <p>Streamline your lead capture from multiple sources such as Facebook, Google Ads, your website, and more, ensuring no lead goes unnoticed.</p></div>
+          <div class="box"><h1 class="font-md font-color-md mb-sm">Lead Analytics</h1>
+            <p class="font-sm font-color-sm">Streamline your lead capture from multiple sources such as Facebook, Google Ads, your website, and more, ensuring no lead goes unnoticed. </p></div>
+          <div class="box"><h1 class="font-md font-color-md mb-sm">Franchise Management</h1>
+            <p class="font-sm font-color-sm">Streamline your lead capture from multiple sources such as Facebook, Google Ads, your website, and more, ensuring no lead goes unnoticed.</p></div>
         </div>
       </div>
       
@@ -1344,11 +1163,11 @@ margin: auto;
      
     <div class="transparent-container">
       <div class="content-transparent-container">
-          <h1>Get Started Now!</h1>
-          <p>It only takes a moment of your time! Our dedicated team will respond to you promptly.</p>
+          <h1 class="font-lg font-color-lg mb-sm">Get Started Now!</h1>
+          <p class="font-sm font-color-sm mb-md">It only takes a moment of your time! Our dedicated team will respond to you promptly.</p>
           <div class="button-group-transparent-container">
-              <button class="btn-transparent-container primary">Learn More</button>
-              <button class="btn-transparent-container secondary">Contact Us</button>
+              <button class="button">Call us</button>
+              <button class="button">Whats app now</button>
           </div>
           <div class="image-container2">
             <img src="/images/phone.png" alt="Decorative Image">
@@ -1357,14 +1176,14 @@ margin: auto;
   </div>
 
   <div class="text-container2">
-    <h1>Our Pricing</h1>
+    <h1 class="font-lg font-color-lg">Our Pricing</h1>
   </div>
 
 
 <div class="pricing-container">
   <div class="left-content">
-    <p>Streamline your lead capture from multiple sources such as Facebook, Google Ads, your website, and more, ensuring no lead goes unnoticed. </p>
-    <ul style="list-style: '-'; padding: 0;">
+    <p class="font-sm font-color-sm mb-md">Streamline your lead capture from multiple sources such as Facebook, Google Ads, your website, and more, ensuring no lead goes unnoticed. </p>
+    <ul class="font-sm font-color-sm mb-md" style="list-style: '-'; padding: 0;">
       <li>Streamline your lead capture </li>
       <li>Streamline your lead capture </li>
       <li>Streamline your lead capture </li>
@@ -1380,9 +1199,9 @@ margin: auto;
 
   <div class="right-content">
     <div class="transparent-box">
-      <h2>Trial</h2>
-      <hr style="border: none; height: 2px; background: linear-gradient(244.91deg, #D4FFEC 47.83%, #57F2CC 80.44%, #4596FB 115.94%);">
-      <ul style="list-style: none; padding: 0;">
+      <h2 class="font-md font-color-md mb-sm">Trial</h2>
+      <hr class="mb-md" style="border: none; height: 2px; background: linear-gradient(244.91deg, #D4FFEC 47.83%, #57F2CC 80.44%, #4596FB 115.94%);">
+      <ul class="font-sm font-color-sm mb-md" style="list-style: none; padding: 0;">
         <li>Free usage</li>
         <li>All Permissions</li>
         <li>3 Users</li>
@@ -1390,13 +1209,13 @@ margin: auto;
         <li>Lorem Ipsum</li>
         <li>Lorem Ipsum</li>
       </ul>
-      <button class="btn-pricing">Start Now</button>
+      <button class="button">Start Now</button>
     </div>
 
     <div class="transparent-box">
-      <h2>Custom  Plan</h2>
-      <hr style="border: none; height: 2px; background: linear-gradient(244.91deg, #D4FFEC 47.83%, #57F2CC 80.44%, #4596FB 115.94%);">
-      <ul style="list-style: none; padding: 0;">
+      <h2 class="font-md font-color-md mb-sm">Custom  Plan</h2>
+      <hr class="mb-md" style="border: none; height: 2px; background: linear-gradient(244.91deg, #D4FFEC 47.83%, #57F2CC 80.44%, #4596FB 115.94%);">
+      <ul class="font-sm font-color-sm mb-md" style="list-style: none; padding: 0;">
         <li>Free usage</li>
         <li>All Permissions</li>
         <li>Unlimited Users</li>
@@ -1404,7 +1223,7 @@ margin: auto;
         <li>Third Party Integrations</li>
         <li>Lorem Ipsum</li>
       </ul>
-      <button class="btn-pricing">Contact for Price</button>
+      <button class="button">Contact for Price</button>
     </div>
   </div>
 </div>
@@ -1416,15 +1235,15 @@ margin: auto;
       <img src="/images/aaa.png" alt="Sample Image">
   </div>
   <div class="container-content">
-      <h1>Do not a miss a lead by any chance. access our CRM from any device </h1>
-      <p> Whether you're traveling without a laptop or simply on the go, there's no need to worry when using Emma. Our software is accessible on mobile phones, tablets, laptops, and desktop devices.</p>
-      <button class="btn-flex">Try Now</button>
+      <h1 class="font-lg font-color-lg mb-sm">Do not a miss a lead by any chance. access our CRM from any device </h1>
+      <p class="font-sm font-color-sm mb-md"> Whether you're traveling without a laptop or simply on the go, there's no need to worry when using Emma. Our software is accessible on mobile phones, tablets, laptops, and desktop devices.</p>
+      <button class="button">Try Now</button>
   </div>
 </div>
 
 
 <div class="text-container3">
-  <h1>Join us today and enjoy the satisfaction of our happy customers!</h1>
+  <h1 class="font-lg font-color-lg">Join us today and enjoy the satisfaction of our happy customers!</h1>
 </div>
 
 <div class="gallery-container">
@@ -1450,8 +1269,8 @@ margin: auto;
 
 
 <div class="text-container4">
-  <h1>Connect with us</h1>
-  <p>Reach out to us during our business hours, 9 AM to 6 PM, or connect with our dedicated support team via email or WhatsApp. We're always here to assist you!</p>
+  <h1 class="font-lg font-color-lg mb-sm">Connect with us</h1>
+  <p class="font-sm font-color-sm">Reach out to us during our business hours, 9 AM to 6 PM, or connect with our dedicated support team via email or WhatsApp. We're always here to assist you!</p>
 </div>
 
 
@@ -1459,22 +1278,22 @@ margin: auto;
 
 
   <div class="responsive-containerlast">
-    <p class="intro-text">
+    <p class="intro-text font-sm font-color-sm mb-md">
       Feel free to reach out to us by phone  or email  at your convenience:
     </p>
   
     <div class="logo-names">
       <i class="fa-solid fa-phone"></i>
         <div class="detailslogo">
-        <h3>Our phone:</h3>
-        <p>+91 9567843340</p>
+        <h3 class="font-sm font-color-sm mb-sm">Our phone:</h3>
+        <p class="font-sm font-color-sm mb-sm">+91 9567843340</p>
       </div>
     </div>
     <div class="logo-names">
       <i class="fa-solid fa-envelope"></i>
       <div class="detailslogo">
-      <h3>Our Email:</h3>
-      <p>support@deepnetsoft.com</p>
+      <h3 class="font-sm font-color-sm mb-sm">Our Email:</h3>
+      <p class="font-sm font-color-sm mb-sm">support@deepnetsoft.com</p>
     </div>
   </div>
   
@@ -1524,7 +1343,7 @@ margin: auto;
     <input type="number" id="number" name="number" placeholder="number" required>
     <label for="message">Wrong, Try again</label>
 </div>
-<button type="submit" class="submit-btn">Submit</button>
+<button type="submit" class="button">Submit</button>
 </div>
 </form>
 
