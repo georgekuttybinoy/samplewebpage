@@ -24,7 +24,7 @@ font-family: 'M PLUS Rounded 1c', sans-serif;
 .font-lg {
   font-size: 3rem;
   font-weight: 400;
-  line-height: clamp(1.1, 1.5vw, 1.3);
+  line-height: 1.5;
 }
 
 .font-color-lg {
@@ -56,6 +56,9 @@ font-family: 'M PLUS Rounded 1c', sans-serif;
   color: #ABA7A7;
 }
 
+
+
+
 .mb-lg {
   margin-bottom: 4rem;
 }
@@ -67,6 +70,23 @@ font-family: 'M PLUS Rounded 1c', sans-serif;
 .mb-sm {
   margin-bottom: 1rem;
 }
+
+
+
+.mt-lg {
+  margin-top: 4rem;
+}
+
+.mt-md {
+  margin-top: 2rem;
+}
+
+.mt-sm {
+  margin-top: 1rem;
+}
+
+
+
 
 .button {
   background: transparent;
@@ -89,9 +109,78 @@ font-family: 'M PLUS Rounded 1c', sans-serif;
 
 
 
+.heading-container {
+ width: 100%;
+ max-width: 800px;
+ margin: auto; 
+ padding: 10px;
+ text-align: center; 
+}
 
 
 
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  margin: auto;
+}
+
+
+
+
+.gradient-container-middle {
+width: 100%;
+max-width: 699px;
+height: 599px;
+margin: auto;
+position: absolute;
+top: 0%;
+z-index: -1;
+overflow: hidden;
+}
+
+.circle-gradient-middle {
+  width: 100%;
+  max-width: 70%;
+  height: 70%;
+  background: radial-gradient(circle, rgb(157, 172, 236) 10%, rgb(38, 52, 252) 60%);
+  border-radius: 50%;
+  opacity: 0.1;
+  filter: blur(80px);
+ position: absolute;
+ margin: auto;
+ top: 20%;
+}
+
+.gradient-container-top {
+width: 100%;
+max-width: 70%;
+height: 599px;
+margin: auto;
+position: absolute;
+top: 0%;
+z-index: 1;
+overflow: hidden;
+}
+
+.circle-gradient-top {
+  width: 100%;
+  max-width: 60%;
+  height: 70%;
+  background: radial-gradient(circle, rgb(69, 99, 231) 10%, rgb(34, 48, 247) 80%);
+  border-radius: 50%;
+  opacity: 0.5;
+  filter: blur(80px);
+ position: absolute;
+ margin: auto;
+ top: -30%;
+ left: 25%;
+}
 
 
         .header {
@@ -226,7 +315,10 @@ top: 90px;
 .flex-container {
   display: flex;
   gap: 20px;
-  padding: 100px;
+ width: 100%;
+ max-width: 1113px;
+ margin: auto;
+ margin-bottom: 3%;
 }
 .column {
   flex: 1;
@@ -244,25 +336,12 @@ top: 90px;
 
 
 
-
-.text-container {
-  max-width: 800px; 
-  margin: 0 auto; 
-  padding: 20px;
-  text-align: center; 
-  margin-bottom: 55px;
-}
-
-
-
-
-
 .container1 {
   display: flex;
   flex-direction: column;
   gap: 20px; 
   padding: 20px;
-  
+  margin-bottom: 5%;
 }
 
 .row1 {
@@ -294,23 +373,22 @@ top: 90px;
 
 
 
-
 .image-container {
   width: 100%;
-  max-width: 100vw; 
-  height: auto;
+  max-width: 100%; 
+  height: 100%;
   overflow: hidden; 
   position: absolute;
-  top: calc(100vh + 75vh);
   left: 50%; 
   transform: translateX(-50%); 
   z-index: -1;
 }
 .imgglobe {
   width: 100%;
-  max-width: 1450px;
+  max-width: 90%;
+  top: -30%;
   height: auto;
-  position: relative; 
+  position: absolute;
   left: 50%;
   transform: translateX(-10%); 
   opacity: 0.2; 
@@ -353,31 +431,25 @@ top: 90px;
 
  .image-container2 {
   width: 100%;
-  max-width: 386px; 
-  
-  top: calc(100vh + 250vh);
-  position: absolute;
+  max-width: 286px; 
+  height: auto;
+  margin: auto;
+position: absolute;
   display: flex;
   justify-content: center;
   left: 60%;
+top: 30%;
+ 
 }
 
 .image-container2 img {
   width: 100%;
   height: auto;
-  max-width: 386px; 
+  max-width: 100%; 
   object-fit: contain;
+ 
 } 
 
-
-
-.text-container2 {
-  max-width: 800px; 
-  margin: 0 auto; 
-  padding: 20px;
-  text-align: center; 
-  margin-bottom: 55px;
-}
 
 
 
@@ -388,9 +460,11 @@ top: 90px;
   justify-content: space-between;
   align-items: center;
   max-width: 1200px;
-  margin: 50px auto;
+  width: 100%;
+  margin: auto;
   padding: 20px;
   gap: 20px;
+  margin-bottom: 10%;
 }
 
 .left-content {
@@ -467,14 +541,7 @@ top: 90px;
    
 
 
-.text-container3 {
-  width: 100%;
-  max-width: 65%; 
-  margin: 0 auto; 
-  padding: 20px;
-  text-align: center; 
-  margin-bottom: 55px;
-}
+
 
 
 .gallery-container {
@@ -599,7 +666,7 @@ top: 90px;
     margin: 5% auto;
 }
 
-.transparent-container2 p {
+/* .transparent-container2 p {
     display: block;
 max-width: 920px;
 font-size: 30px;
@@ -620,7 +687,7 @@ font-weight: 400;
 line-height: 1.7;
 font-weight: 600;
 color: #fff;
-}
+} */
 
 .chevron-buttons {
    margin-inline-start: 80%;
@@ -654,15 +721,7 @@ color: #fff;
     transform: scale(0.95);
 }
 
-.text-container4 {
- width: 100%;
- max-width: 800px;
-  margin: auto; 
-  padding: 20px;
-  text-align: center; 
-  margin-bottom: 55px;
-  
-}
+
 
 
 
@@ -835,21 +894,8 @@ word-break: break-all;
     font-size: 0.9rem;
 }
 
-.circle-gradient {
-  width: 100%;
-  max-width: 699px;
-  height: 699px;
-  background: radial-gradient(circle, rgb(89, 89, 252) 10%, rgb(38, 38, 252) 70%);
-  border-radius: 50%;
-  opacity: 0.3;
-  filter: blur(70px);
- position: absolute;
- top: -60%;
- margin: auto;
- margin-left: 20%;
-z-index: -1;
-}
-.circle-gradient2 {
+
+ /* .circle-gradient2 {
   width: 100%;
   max-width: 599px;
   height: 499px;
@@ -862,30 +908,17 @@ z-index: -1;
  margin: auto;
  margin-left: 0%;
 z-index: -1;
-}
-.circle-gradient3 {
-  width: 100%;
-  max-width: 599px;
-  height: 499px;
-  background: radial-gradient(circle, rgb(86, 86, 255) 10%, rgb(38, 156, 252) 70%);
-  border-radius: 50%;
-  opacity: 0.1;
-  filter: blur(90px);
- position: absolute;
- top: 400%;
- margin: auto;
- margin-left: 0%;
-z-index: -1;
-}
+} */
+
 
         @media (max-width: 768px) {
 
 
 
 .font-lg {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 400;
-  line-height: clamp(1.1, 1.5vw, 1.3);
+  line-height: 1.3;
 }
 
 .font-md {
@@ -895,14 +928,18 @@ z-index: -1;
 }
 
 .font-sm {
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: 400;
   line-height: 1rem;
 }
 
+
+
 .button{
   font-size: 0.875rem;
 }
+
+
 
 
 
@@ -972,21 +1009,19 @@ z-index: -1;
    }
   
 
- 
+
   .row1 {
     flex-wrap: wrap;
     justify-content: center;
   }
-  .box1 {
+  .box {
     flex: 1 1 100%; 
   }
-.image-container{
-  top: calc(100vh + 295vh);
-}
-   .imgglobe {
-    max-width: 90vw;
-  } 
 
+  .imgglobe {
+    width: 90%;
+    top: 25%;
+  }
 
   .transparent-container {
    padding: 30px;
@@ -1002,8 +1037,8 @@ z-index: -1;
     width: 90%;
     max-width: 200px; 
     left: 0%;
-    transform: translateX(30%);
-    top: 0;
+    flex-direction: column;
+   
     position: relative;
   } 
 
@@ -1013,6 +1048,7 @@ z-index: -1;
     flex-direction: column;
     text-align: center;
   }
+ 
 
   .right-content {
     width: 100%;
@@ -1067,19 +1103,19 @@ font-size: 18px;
               max-width: 80%;
 margin: auto;
             }
-.circle-gradient {
-  
-  max-width: 20%;
+.gradient-container-middle {
+  top: 50%;
+ max-width: 100%;
+ height: 40%;
 }
-            .circle-gradient2 {
-              max-width: 30%;
 
-              top: 500%;
-            }
-            .circle-gradient3 {
-              max-width: 30%;
-              top: 720%;
-            }
+.gradient-container-top {
+  max-width: 100%;
+}
+.circle-gradient-top {
+  max-width: 40%;
+}
+        
 
             .footer-container {
         flex-direction: row;
@@ -1105,9 +1141,12 @@ margin: auto;
     </header>
 
 
-    <div class="hero-section">
+    <div class="hero-section mb-lg">
         <h1>Accelerate your growth through hyper-qualified leads</h1>
         <button class="button1">Request a Demo</button>
+        <div class="gradient-container-top">
+          <div class="circle-gradient-top"></div>
+          </div>
     </div>
 
 
@@ -1123,7 +1162,7 @@ margin: auto;
           <p class="font-sm font-color-sm mb-sm">Streamline your lead capture from multiple sources such as Facebook, Google Ads, your website, and more, ensuring no lead goes unnoticed.</p>
 
         </div>
-        <div class="column">
+        <div class="column mb-lg">
             <p class="font-sm font-color-sm mb-sm">Streamline your lead capture from multiple sources such as Facebook, Google Ads, your website, and more, ensuring no lead goes unnoticed.</p>
           <img src="/images/img comp.png" alt="Image 2">
           
@@ -1131,10 +1170,10 @@ margin: auto;
       </div>
       
 
-
-      <div class="text-container">
+<div class="main-container">
+      <div class="heading-container">
         <h1 class="font-lg font-color-lg mb-md">What Makes emma Different?</h1>
-        <p class="font-sm font-color-sm">Streamline your lead capture from multiple sources such as Facebook, Google Ads, your website, and more, ensuring no lead goes unnoticed. Efficient lead management and insightful analytics can boost your business growth by up to 50%.</p>
+        <p class="font-sm font-color-sm mb-lg">Streamline your lead capture from multiple sources such as Facebook, Google Ads, your website, and more, ensuring no lead goes unnoticed. Efficient lead management and insightful analytics can boost your business growth by up to 50%.</p>
       </div>
 
 
@@ -1160,7 +1199,12 @@ margin: auto;
   <div class="image-container">
       <img src="/images/globe.png" alt="Globe Image" class="imgglobe">
     </div> 
-     
+     <div class="gradient-container-middle">
+    <div class="circle-gradient-middle"></div>
+    </div>
+  </div>
+
+     <div class="main-container">
     <div class="transparent-container">
       <div class="content-transparent-container">
           <h1 class="font-lg font-color-lg mb-sm">Get Started Now!</h1>
@@ -1169,14 +1213,16 @@ margin: auto;
               <button class="button">Call us</button>
               <button class="button">Whats app now</button>
           </div>
-          <div class="image-container2">
-            <img src="/images/phone.png" alt="Decorative Image">
-          </div> 
+      </div>
+      <div class="image-container2">
+        <img src="/images/phone.png" alt="Decorative Image">
       </div>
   </div>
+</div>
 
-  <div class="text-container2">
-    <h1 class="font-lg font-color-lg">Our Pricing</h1>
+  <div class="main-container">
+  <div class="heading-container">
+    <h1 class="font-lg font-color-lg mb-md">Our Pricing</h1>
   </div>
 
 
@@ -1227,7 +1273,10 @@ margin: auto;
     </div>
   </div>
 </div>
-
+<div class="gradient-container-middle">
+  <div class="circle-gradient-middle"></div>
+  </div>
+</div>
 
 
 <div class="flex-container2">
@@ -1242,8 +1291,8 @@ margin: auto;
 </div>
 
 
-<div class="text-container3">
-  <h1 class="font-lg font-color-lg">Join us today and enjoy the satisfaction of our happy customers!</h1>
+<div class="heading-container">
+  <h1 class="font-lg font-color-lg mb-lg">Join us today and enjoy the satisfaction of our happy customers!</h1>
 </div>
 
 <div class="gallery-container">
@@ -1256,7 +1305,7 @@ margin: auto;
 </div>
 
 <div class="transparent-container2">
-  <p>The reason why I only work with DNS? Simple: <span class="highlight"> guys are exceptionally good, flexible and always “ on top of their game ”. </span>
+  <p class="font-md font-color-sm mb-md">The reason why I only work with DNS? Simple: <span class="highlight font-md font-color-md"> guys are exceptionally good, flexible and always “ on top of their game ”. </span>
     They consistently deliver high quality, are creative in their approach 
     and work customer-oriented.</p>
     <h4>Mandy van der Put,<hr style="border: none;">
@@ -1268,9 +1317,9 @@ margin: auto;
 </div>
 
 
-<div class="text-container4">
+<div class="heading-container">
   <h1 class="font-lg font-color-lg mb-sm">Connect with us</h1>
-  <p class="font-sm font-color-sm">Reach out to us during our business hours, 9 AM to 6 PM, or connect with our dedicated support team via email or WhatsApp. We're always here to assist you!</p>
+  <p class="font-sm font-color-sm mb-lg">Reach out to us during our business hours, 9 AM to 6 PM, or connect with our dedicated support team via email or WhatsApp. We're always here to assist you!</p>
 </div>
 
 
@@ -1359,9 +1408,6 @@ margin: auto;
   </div>
 </footer>
 
-<div class="circle-gradient"></div>
-<div class="circle-gradient2"></div>
-<div class="circle-gradient3"></div>
 
     <script>
         function toggleMenu() {
